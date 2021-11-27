@@ -1,0 +1,6 @@
+server:
+  ssl:
+    key-store-type: PKCS12
+    key-store: server/server.p12
+    key-password: changeit
+    key-alias: localhost
