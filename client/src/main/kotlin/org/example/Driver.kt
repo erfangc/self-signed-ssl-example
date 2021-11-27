@@ -105,19 +105,17 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
         .build()
 
     val httpResponse = httpClient.send(
-        HttpRequest.newBuilder(URI.create("https://localhost:8080/api/v1")).GET().build(),
+        HttpRequest.newBuilder(URI.create("https://127.0.0.1:8080/api/v1")).GET().build(),
         HttpResponse.BodyHandlers.ofString()
     )
-    
-    
+
     val httpResponse2 = httpClient.send(
         HttpRequest.newBuilder(URI.create("https://api.sampleapis.com/coffee/hot")).GET().build(),
         HttpResponse.BodyHandlers.ofString()
     )
-    
-    
+
+
 
     println(httpResponse.body())
     println(httpResponse2.body())
 }
-
